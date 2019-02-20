@@ -16,7 +16,7 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-#login {
+#help {
   width: 85vw;
   display: flex;
   flex-direction: column;
@@ -31,9 +31,11 @@
 
   .box {
     padding: 0;
+
     header {
       height: 50px;
       background: #34495e;
+
       .title {
         h2 {
           color: white;
@@ -44,64 +46,37 @@
     }
   }
 
-  #loginArea {
-    width: 50%;
-    h3 {
-      text-align: center;
-      font-family: "Raleway", sans-serif;
-    }
+  .content {
     form {
+      width: 75%;
+      text-align: center;
+      margin: 0 auto;
+
+      .form-group {
+        textarea {
+          resize: vertical;
+        }
+      }
+
       button {
+        background: #27ae60;
+        cursor: pointer;
+        color: white;
+        border: none;
+        padding: 10px;
         -webkit-transition: background 500ms;
         -moz-transition: background 500ms;
         -ms-transition: background 500ms;
         -o-transition: background 500ms;
         transition: background 500ms;
-        display: flex;
-        margin: 0 auto;
-        width: 50%;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        border: none;
-        padding: 10px;
-        background: #27ae60;
-        cursor: pointer;
-        color: #ecf0f1;
         &:hover {
           background: #2ecc71;
         }
       }
-    }
-  }
-
-  #registerArea {
-    width: 50%;
-    h3 {
-      text-align: center;
-      font-family: 'Raleway', sans-serif;
-    }
-    form {
-      button {
-        -webkit-transition: background 500ms;
-        -moz-transition: background 500ms;
-        -ms-transition: background 500ms;
-        -o-transition: background 500ms;
-        transition: background 500ms;
-        display: flex;
-        margin: 0 auto;
-        width: 50%;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        background: #27ae60;
-        border: none;
-        cursor: pointer;
-        color: #ecf0f1;
-        &:hover {
-          background: #2ecc71;
-        }
+      p {
+        font-weight: normal;
+        font-style: italic;
+        margin: 20px 0;
       }
     }
   }

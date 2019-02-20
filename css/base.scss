@@ -1,8 +1,24 @@
 /*!
- * Developped by HEBAN Simon
- * v1.0.0
+ * CMS (Content Management System) pour la gestion d'élèves
+ *     Copyright (C) 2019  HEBAN Simon
+ *
+ *     This program is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+/**
+  BACKGROUND: https://wallpaperscraft.com/download/forest_trees_fog_110131/1920x1080 NO LICENSE
+ */
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
@@ -18,7 +34,9 @@ body {
   display: flex;
   flex-direction: row;
   min-height: 100%;
-  background: rgb(236, 240, 241);
+  background: url("../img/background.jpg") fixed no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
   aside {
     display: flex;
     flex-direction: column;
@@ -68,6 +86,7 @@ body {
             align-items: center;
             margin: 0 0 0 10%;
             height: 100%;
+            width: 100%;
             color: #7f8c8d;
             text-decoration: none;
           }
@@ -143,5 +162,23 @@ body {
 
   input {
     padding: 5px;
+  }
+}
+
+@for $i from 2 through 4 {
+  .divised-#{$i} {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .divised-content {
+      display: flex;
+      flex-direction: column;
+      width: 100% / $i;
+
+      input {
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
   }
 }

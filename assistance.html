@@ -1,0 +1,90 @@
+<!--
+  ~ CMS (Content Management System) pour la gestion d'élèves
+  ~     Copyright (C) 2019  HEBAN Simon
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <title>%monEcole% | Accéder à mon compte</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<aside>
+    <header>
+        <div id="icon">
+            <img src="img/profile.svg" alt="anonymous"/>
+        </div>
+        <p>Vous n'êtes pas connecté</p>
+    </header>
+    <div id="navigation">
+        <ul>
+            <li><a href=""><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href=""><i class="fas fa-question-circle"></i> Assistances</a></li>
+            <li><a href=""><i class="fas fa-sign-in-alt"></i> Connexion</a></li>
+        </ul>
+    </div>
+</aside>
+<main id="help">
+    <section class="box">
+        <header>
+            <div class="title">
+                <h2>Demande d'aide</h2>
+            </div>
+        </header>
+
+        <div class="content">
+            <form method="POST">
+                <div class="form-group divised-2">
+                    <div class="divised-content">
+                        <label for="nEtudiant">N° Étudiant</label>
+                        <input type="text" id="nEtudiant" name="etudiant"/>
+                    </div>
+                    <p>OU</p>
+                    <div class="divised-content">
+                        <label for="Email">Email</label>
+                        <input type="email" id="Email" name="email"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="assistance">Choisir le type d'assistance</label>
+                    <select id="assistance" name="assistance">
+                        <option>Problème d'enregistrement</option>
+                        <option>Déclarer un incident</option>
+                        <option>...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="assistanceDesc">Choisir le type d'assistance</label>
+                    <textarea name="assistanceDesc" id="assistanceDesc" rows="10">
+
+                    </textarea>
+                </div>
+
+                <p>Veuillez noter que votre adresse IP sera sauvegardée.</p>
+
+                <button>Envoyer ma demande</button>
+            </form>
+        </div>
+
+    </section>
+</main>
+</body>
+</html>

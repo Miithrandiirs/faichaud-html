@@ -1,26 +1,85 @@
-/*!
- * Developped by HEBAN Simon
- * v1.0.0
+/*
+ * CMS (Content Management System) pour la gestion d'élèves
+ *     Copyright (C) 2019  HEBAN Simon
+ *
+ *     This program is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-/*!
- * Developped by HEBAN Simon
- * v1.0.0
- */
-/*!
- * Developped by HEBAN Simon
- * v1.0.0
- */
-/*!
- * Developped by HEBAN Simon
- * v1.0.0
- */
+
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+#help {
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#help .content {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#help .box {
+  padding: 0;
+}
+#help .box header {
+  height: 50px;
+  background: #34495e;
+}
+#help .box header .title h2 {
+  color: white;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+#help .content form {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+}
+#help .content form .form-group textarea {
+  resize: vertical;
+}
+#help .content form button {
+  background: #27ae60;
+  cursor: pointer;
+  color: white;
+  border: none;
+  padding: 10px;
+  -webkit-transition: background 500ms;
+  -moz-transition: background 500ms;
+  -ms-transition: background 500ms;
+  -o-transition: background 500ms;
+  transition: background 500ms;
+}
+#help .content form button:hover {
+  background: #2ecc71;
+}
+#help .content form p {
+  font-weight: normal;
+  font-style: italic;
+  margin: 20px 0;
+}
+
 #index {
   width: 85vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#index .box header .title h2 {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 #login {
@@ -29,13 +88,83 @@
   flex-direction: column;
   align-items: center;
 }
+#login .content {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#login .box {
+  padding: 0;
+}
+#login .box header {
+  height: 50px;
+  background: #34495e;
+}
+#login .box header .title h2 {
+  color: white;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
 #login #loginArea {
   width: 50%;
 }
+#login #loginArea h3 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+#login #loginArea form button {
+  -webkit-transition: background 500ms;
+  -moz-transition: background 500ms;
+  -ms-transition: background 500ms;
+  -o-transition: background 500ms;
+  transition: background 500ms;
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 10px;
+  background: #27ae60;
+  cursor: pointer;
+  color: #ecf0f1;
+}
+#login #loginArea form button:hover {
+  background: #2ecc71;
+}
+#login #registerArea {
+  width: 50%;
+}
+#login #registerArea h3 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+#login #registerArea form button {
+  -webkit-transition: background 500ms;
+  -moz-transition: background 500ms;
+  -ms-transition: background 500ms;
+  -o-transition: background 500ms;
+  transition: background 500ms;
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: #27ae60;
+  border: none;
+  cursor: pointer;
+  color: #ecf0f1;
+}
+#login #registerArea form button:hover {
+  background: #2ecc71;
+}
 
-/*!
- * Developped by HEBAN Simon
- * v1.0.0
+/**
+  BACKGROUND: https://wallpaperscraft.com/download/forest_trees_fog_110131/1920x1080 NO LICENSE
  */
 * {
   padding: 0;
@@ -50,7 +179,9 @@ body {
   display: flex;
   flex-direction: row;
   min-height: 100%;
-  background: #ecf0f1;
+  background: url("../img/background.jpg") fixed no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 body aside {
   display: flex;
@@ -102,6 +233,7 @@ body aside #navigation ul li a {
   align-items: center;
   margin: 0 0 0 10%;
   height: 100%;
+  width: 100%;
   color: #7f8c8d;
   text-decoration: none;
 }
@@ -170,6 +302,51 @@ body aside #navigation ul li:hover a {
 }
 .form-group input {
   padding: 5px;
+}
+
+.divised-2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.divised-2 .divised-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.divised-2 .divised-content input {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.divised-3 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.divised-3 .divised-content {
+  display: flex;
+  flex-direction: column;
+  width: 33.3333333333%;
+}
+.divised-3 .divised-content input {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.divised-4 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.divised-4 .divised-content {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.divised-4 .divised-content input {
+  width: 50%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

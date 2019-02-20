@@ -1,8 +1,26 @@
+<!--
+  ~ CMS (Content Management System) pour la gestion d'élèves
+  ~     Copyright (C) 2019  HEBAN Simon
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8"/>
-    <title>Title</title>
+    <title>%monEcole% | Accéder à mon compte</title>
     <link rel="stylesheet" href="css/style.css" media="screen" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
@@ -27,31 +45,60 @@
         <header>
             <div class="title">
                 <h2>Accéder à mon compte</h2>
-
             </div>
         </header>
-        <hr/>
+
         <div class="content">
             <div id="loginArea">
+                <h3>Connexion</h3>
                 <form method="POST">
                     <div class="form-group">
-                        <label for="for.username">Nom d'utilisateur</label>
-                        <input type="text" id="for.username" name="username"/>
+                        <label for="for.connexion.username">Nom d'utilisateur</label>
+                        <input type="text" id="for.connexion.username" name="username"/>
                     </div>
 
                     <div class="form-group">
-                        <label for="for.password">Mot de passe</label>
-                        <input type="password" id="for.password" name="password"/>
+                        <label for="for.connexion.password">Mot de passe</label>
+                        <input type="password" id="for.connexion.password" name="password"/>
                     </div>
 
                     <button>Se connecter</button>
                 </form>
             </div>
             <div id="registerArea">
-                <form method="post">
+                <h3>Inscription</h3>
+                <form method="POST">
                     <div class="form-group">
-
+                        <label for="for.register.username">Nom d'utilisateur</label>
+                        <input type="text" id="for.register.username" name="username"/>
                     </div>
+
+                    <div class="form-group">
+                        <label for="for.register.etudiant">N° étudiant</label>
+                        <input type="text" id="for.register.etudiant" name="username"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="for.email">Adresse E-Mail</label>
+                        <input type="email" id="for.email" name="password"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="for.register.password">Mot de passe</label>
+                        <input type="password" id="for.register.password" name="password"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="for.register.password.confirm">Répétez le mot de passe</label>
+                        <input type="password" id="for.register.password.confirm" name="password"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label><input type="checkbox"> J'accepte les <a href="#">Conditions Génrales d'utilisations</a></label>
+                        <label><input type="checkbox"> Je confirme que je suis bien étudiant à %name%</label>
+                    </div>
+
+                    <button>M'enregistrer</button>
                 </form>
             </div>
         </div>
