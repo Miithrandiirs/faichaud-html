@@ -121,9 +121,118 @@
         }
       }
 
+
+      /*
+        ESPACE: AIDE
+       */
+      #espaceAide {
+        width: 74%;
+        margin-left: 1%;
+
+        &>a {
+          display: flex;
+          width: 25%;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          background: #2ecc71;
+          color: #FFFF;
+          margin: 5px 0;
+          height: 30px;
+        }
+
+        header {
+          background: #68859b;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          h3 {
+            color: white;
+          }
+        }
+
+        #aide {
+          &>table {
+            border-spacing: 0;
+            width: 100%;
+            &>thead {
+              &>tr {
+                color: #34495e;
+                background: #e5e9ea;
+                &>th {
+                  padding: 10px;
+                  width: calc(100% / 4);
+                }
+              }
+            }
+            &>tbody {
+              &>tr {
+                &>td {
+                  padding: 10px;
+                  text-align: center;
+                  &>a {
+                    text-decoration: none;
+                    color: white;
+                    background: #2ecc71;
+                    padding: 5px;
+                    border-radius: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        /*
+          ESPACE: ENVOIE D'UNE DEMANDE D'AIDE
+         */
+        #aide_envoyer {
+          form {
+            button {
+              -webkit-transition: background 500ms;
+              -moz-transition: background 500ms;
+              -ms-transition: background 500ms;
+              -o-transition: background 500ms;
+              transition: background 500ms;
+              display: flex;
+              margin: 0 auto;
+              width: 50%;
+              text-align: center;
+              align-items: center;
+              justify-content: center;
+              padding: 10px;
+              background: #27ae60;
+              border: none;
+              cursor: pointer;
+              color: #ecf0f1;
+              &:hover {
+                background: #2ecc71;
+              }
+            }
+          }
+        }
+      }
+
+      /*
+        ESPACE: TCHAT
+       */
       #espaceTchat {
         width: 74%;
         margin-left: 1%;
+
+        &>a {
+          display: flex;
+          width: 25%;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          background: #2ecc71;
+          color: #FFFF;
+          margin: 5px 0;
+          height: 30px;
+        }
+
         header {
           background: #68859b;
           display: flex;
@@ -170,12 +279,59 @@
                 & > time {
                   display: flex;
                   justify-content: flex-end;
+                  font-style: italic;
                 }
               }
             }
           }
         }
       }
+
+      #espaceTchatEnvoyer {
+        width: 74%;
+        margin-left: 1%;
+
+        header {
+          background: #68859b;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          h3 {
+            color: white;
+          }
+        }
+
+        #tchat {
+          .reponse {
+            background: #f2f6f7;
+            display: flex;
+            flex-direction: row;
+            &>.img {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 5%;
+              &>img {
+                width: 100%;
+                border-radius: 100%;
+              }
+            }
+
+            &>.message {
+              display: flex;
+              align-items: center;
+              width: 95%;
+              &>.user {
+                font-style: italic;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
     }
   }
 }

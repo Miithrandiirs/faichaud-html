@@ -69,6 +69,12 @@
   flex-direction: row;
   padding: 20px;
   font-family: "Roboto", sans-serif;
+  /*
+    ESPACE: AIDE
+   */
+  /*
+    ESPACE: TCHAT
+   */
 }
 #espaces .box .content #espaceNavigation {
   width: 25%;
@@ -130,9 +136,92 @@
 #espaces .box .content #annonces .annonce article {
   padding: 10px;
 }
+#espaces .box .content #espaceAide {
+  width: 74%;
+  margin-left: 1%;
+  /*
+    ESPACE: ENVOIE D'UNE DEMANDE D'AIDE
+   */
+}
+#espaces .box .content #espaceAide > a {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: #2ecc71;
+  color: #FFFF;
+  margin: 5px 0;
+  height: 30px;
+}
+#espaces .box .content #espaceAide header {
+  background: #68859b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#espaces .box .content #espaceAide header h3 {
+  color: white;
+}
+#espaces .box .content #espaceAide #aide > table {
+  border-spacing: 0;
+  width: 100%;
+}
+#espaces .box .content #espaceAide #aide > table > thead > tr {
+  color: #34495e;
+  background: #e5e9ea;
+}
+#espaces .box .content #espaceAide #aide > table > thead > tr > th {
+  padding: 10px;
+  width: calc(100% / 4);
+}
+#espaces .box .content #espaceAide #aide > table > tbody > tr > td {
+  padding: 10px;
+  text-align: center;
+}
+#espaces .box .content #espaceAide #aide > table > tbody > tr > td > a {
+  text-decoration: none;
+  color: white;
+  background: #2ecc71;
+  padding: 5px;
+  border-radius: 5px;
+}
+#espaces .box .content #espaceAide #aide_envoyer form button {
+  -webkit-transition: background 500ms;
+  -moz-transition: background 500ms;
+  -ms-transition: background 500ms;
+  -o-transition: background 500ms;
+  transition: background 500ms;
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: #27ae60;
+  border: none;
+  cursor: pointer;
+  color: #ecf0f1;
+}
+#espaces .box .content #espaceAide #aide_envoyer form button:hover {
+  background: #2ecc71;
+}
 #espaces .box .content #espaceTchat {
   width: 74%;
   margin-left: 1%;
+}
+#espaces .box .content #espaceTchat > a {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: #2ecc71;
+  color: #FFFF;
+  margin: 5px 0;
+  height: 30px;
 }
 #espaces .box .content #espaceTchat header {
   background: #68859b;
@@ -178,6 +267,45 @@
 #espaces .box .content #espaceTchat #tchats > .tchat a > .content > time {
   display: flex;
   justify-content: flex-end;
+  font-style: italic;
+}
+#espaces .box .content #espaceTchatEnvoyer {
+  width: 74%;
+  margin-left: 1%;
+}
+#espaces .box .content #espaceTchatEnvoyer header {
+  background: #68859b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#espaces .box .content #espaceTchatEnvoyer header h3 {
+  color: white;
+}
+#espaces .box .content #espaceTchatEnvoyer #tchat .reponse {
+  background: #f2f6f7;
+  display: flex;
+  flex-direction: row;
+}
+#espaces .box .content #espaceTchatEnvoyer #tchat .reponse > .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+}
+#espaces .box .content #espaceTchatEnvoyer #tchat .reponse > .img > img {
+  width: 100%;
+  border-radius: 100%;
+}
+#espaces .box .content #espaceTchatEnvoyer #tchat .reponse > .message {
+  display: flex;
+  align-items: center;
+  width: 95%;
+}
+#espaces .box .content #espaceTchatEnvoyer #tchat .reponse > .message > .user {
+  font-style: italic;
+  font-size: 14px;
 }
 
 /*!
@@ -544,6 +672,9 @@ body aside #navigation ul .multi ul li {
 }
 .form-group input {
   padding: 5px;
+}
+.form-group textarea {
+  resize: vertical;
 }
 
 .divised-2 {

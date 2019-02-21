@@ -180,6 +180,10 @@ body {
   input {
     padding: 5px;
   }
+
+  textarea {
+    resize: vertical;
+  }
 }
 
 @for $i from 2 through 4 {

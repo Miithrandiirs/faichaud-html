@@ -41,12 +41,6 @@
             </div>
         </header>
 
-        <div id="information">
-            <div class="warning">
-                <p><i class="fas fa-bullhorn"></i> Attention ! Les tchats sont uniquement destinés à un usage éducatif !</p>
-            </div>
-        </div>
-
         <div class="content">
             <div id="espaceNavigation">
                 <header>
@@ -54,47 +48,35 @@
                 </header>
                 <ul>
                     <li><a href=""> Accueil</a></li>
-                    <li><a href="" class="active"> Tchat</a></li>
-                    <li><a href=""> Aide</a></li>
+                    <li><a href="./espace_tchat.html"> Tchat</a></li>
+                    <li><a href="#" class="active"> Aide</a></li>
                     <li><a href=""> Fichiers</a></li>
                     <li><a href=""> Evaluations</a></li>
                     <li><a href=""> Sondage</a></li>
                 </ul>
             </div>
-            <div id="espaceTchat">
+            <div id="espaceAide">
                 <header>
-                    <h3>Tchat</h3>
+                    <h3>Aide</h3>
                 </header>
 
-                <div id="tchats">
-                    <div class="tchat">
-                        <a href="./espace_tchat_view.html">
-                            <div class="img">
-                                <img src="img/profil-2.svg" alt="profile"/>
-                            </div>
-                            <div class="content">
-                                <span>MA CONVERSATION, dernière message par HEBAN Simon</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur lobortis rutrum. Pellentesque imperdiet maximus porttitor. Aenean blandit nulla ipsum, et consequat sapien fermentum sed.</p>
-                                <time>21/02/2019 20:12</time>
-                            </div>
-                        </a>
-                    </div>
+                <div id="aide_envoyer">
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="form.subject">Sujet</label>
+                            <input type="text" id="form.subject"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="form.message">Message</label>
+                            <textarea rows="6" id="form.message"></textarea>
+                        </div>
 
-                    <div class="tchat">
-                        <a href="./espace_tchat_view.html">
-                            <div class="img">
-                                <img src="img/profil-2.svg" alt="profile"/>
-                            </div>
-                            <div class="content">
-                                <span>MA CONVERSATION, dernière message par HEBAN Simon</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur lobortis rutrum. Pellentesque imperdiet maximus porttitor. Aenean blandit nulla ipsum, et consequat sapien fermentum sed.</p>
-                                <time>21/02/2019 20:12</time>
-                            </div>
-                        </a>
-                    </div>
+                        <button>Envoyer</button>
+                    </form>
                 </div>
             </div>
         </div>
+
     </section>
 </main>
 
