@@ -70,13 +70,13 @@ body {
     }
 
     #navigation {
-      min-height: 80vh;
       ul {
         li {
           min-height: 5vh;
           transition: background 500ms;
           display: flex;
-          align-items: center;
+          flex-direction: column;
+          justify-content: center;
           i {
             margin-right: 10px;
           }
@@ -86,15 +86,32 @@ body {
             align-items: center;
             margin: 0 0 0 10%;
             height: 100%;
-            width: 100%;
             color: #7f8c8d;
             text-decoration: none;
+            font-family: "Roboto", sans-serif;
           }
 
           &:hover {
             background: #bdc3c7;
             a {
               color: #34495e;
+            }
+          }
+        }
+
+        .multi {
+          &:hover {
+            background: none;
+          }
+          ul {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            li {
+              display: flex;
+              flex-direction: row;
+              margin-top: 10px;
+              width: 100%;
             }
           }
         }
@@ -182,3 +199,8 @@ body {
     }
   }
 }
+
+.appear {
+  transition: 500ms;
+}
+
