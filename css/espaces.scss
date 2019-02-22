@@ -1,3 +1,21 @@
+/*!
+ * CMS (Content Management System) pour la gestion d'élèves
+ *     Copyright (C) 2019  HEBAN Simon
+ *
+ *     This program is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
 #espaces {
   width: 85vw;
   display: flex;
@@ -517,6 +535,115 @@
           }
         }
       }
+
+      /**
+        ESPACE: EVALUATIONS
+       */
+
+      #espaceEval {
+        width: 74%;
+        margin-left: 1%;
+
+        & > a {
+          display: flex;
+          width: 25%;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          background: #2ecc71;
+          color: #FFFF;
+          margin: 5px 0;
+          height: 30px;
+        }
+
+        header {
+          background: #68859b;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          h3 {
+            color: white;
+          }
+        }
+
+        &>#evalGraph {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          &>.graph {
+            &>h2 {
+              text-align: center;
+            }
+            width: calc(100% / 2);
+          }
+        }
+
+        &>#eval {
+          &>a {
+            display: flex;
+            width: 25%;
+            margin: 10px auto;
+            background: #8e44ad;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            justify-content: center;
+            align-content: center;
+          }
+
+          &>table {
+            width: 100%;
+            max-width: 100%;
+            border-spacing: 0;
+            &>thead {
+              background: #ecf0f1;
+              color:#34495e;
+              &>tr {
+                &>th {
+                  padding: 10px;
+                }
+              }
+            }
+
+            &>tbody {
+              &>.success {
+                background: #2ecc71;
+              }
+              &>.warning {
+                background: #e67e22;
+              }
+              &>.alert {
+                background: #e74c3c;
+              }
+              &>.normal {
+                background: #ecf0f1;
+                &>td {
+                  color: #34495e;
+                  &>a {
+                    color: #34495e;
+                  }
+                }
+              }
+              &>tr {
+                &>td {
+                  text-align: center;
+                  padding: 5px;
+                  color: #ecf0f1;
+                  &>a {
+                    color: white;
+                  }
+                  &>.note {
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
     }
   }
 }
