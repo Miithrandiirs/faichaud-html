@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<aside>
+    <header>
+        <div id="icon">
+            <img src="img/profile.svg" alt="anonymous"/>
+        </div>
+        <p>Bienvenue,</p>
+        <p><b>John DOE</b></p>
+    </header>
+    <div id="navigation">
+        <ul>
+            <li><a href=""><i class="fas fa-home"></i> Accueil</a></li>
+            <li class="multi"><a href=""><i class="fas fa-chevron-down"></i> Mes espaces</a>
+                <ul class="appear">
+                    <li><a href=""><i class="fas fa-laptop"></i> Informatique 1</a></li>
+                    <li><a href=""><i class="fas fa-laptop"></i> Informatique 2</a></li>
+                </ul>
+            </li>
+            <li><a href=""><i class="fas fa-graduation-cap"></i> Ma classe</a></li>
+            <li><a href=""><i class="fas fa-calendar-alt"></i> Emploi du temps</a></li>
+            <li><a href=""><i class="fas fa-folder-open"></i> Mes ressources</a></li>
+            <li><a href=""><i class="fas fa-user"></i> Mon compte</a></li>
+            <li><a href=""><i class="fas fa-sign-out-alt"></i> Déconnexion</a></li>
+        </ul>
+    </div>
+</aside>
+<main id="espaces">
+
+    <section class="box">
+        <header>
+            <div class="title">
+                <h2>Espace : Informatique 1</h2>
+            </div>
+        </header>
+
+        <div class="content">
+            <div id="espaceNavigation">
+                <header>
+                    <h3>NAVIGATION</h3>
+                </header>
+                <ul>
+                    <li><a href=""> Accueil</a></li>
+                    <li><a href="./espace_tchat.html" > Tchat</a></li>
+                    <li><a href="#" class="active"> Aide</a></li>
+                    <li><a href=""> Fichiers</a></li>
+                    <li><a href=""> Evaluations</a></li>
+                    <li><a href=""> Sondage</a></li>
+                </ul>
+            </div>
+            <div id="espaceAideView">
+                <header>
+                    <h3>Aide</h3>
+                </header>
+
+                <div id="reponses">
+
+                    <div class="reponse">
+                        <div class="img">
+                            <img src="img/profile.svg" alt="Utilisateur"/>
+                        </div>
+                        <div class="message">
+                            <p>In ut metus sodales enim suscipit lobortis eu maximus felis. Phasellus lobortis mi enim, ac rutrum lacus accumsan id. Nunc quis malesuada tortor. Maecenas ex elit, accumsan quis nisl ac, molestie molestie libero. Ut dictum dui sed porta porta. Quisque eget justo nulla. Cras viverra felis eget tortor dictum sodales. Integer vel molestie turpis, ut blandit magna. Curabitur efficitur laoreet tempor. </p>
+                            <p class="time">Le 20/04/2035 05:22</p>
+                        </div>
+                    </div>
+
+                    <div class="reponse professeur">
+                        <div class="img">
+                            <img src="img/profil-2.svg" alt="Utilisateur"/>
+                        </div>
+                        <div class="message">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non interdum diam. Proin dictum nec risus ac commodo. Praesent ut purus lectus. Sed nibh dui, rutrum eu iaculis id, viverra at purus. Maecenas ac tellus sit amet metus cursus tincidunt. Vivamus cursus, velit eget scelerisque lobortis, urna urna euismod quam, nec ornare odio est sit amet felis. Maecenas tincidunt euismod rutrum. Duis viverra, ante at ullamcorper luctus, est ante volutpat lorem, ut pharetra risus magna eu mi. Nullam vel velit porttitor, tincidunt risus vitae, lacinia massa. Mauris a nulla non libero accumsan fringilla. </p>
+                            <br/>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non interdum diam. Proin dictum nec risus ac commodo. Praesent ut purus lectus. Sed nibh dui, rutrum eu iaculis id, viverra at purus. Maecenas ac tellus sit amet metus cursus tincidunt. Vivamus cursus, velit eget scelerisque lobortis, urna urna euismod quam, nec ornare odio est sit amet felis. Maecenas tincidunt euismod rutrum. Duis viverra, ante at ullamcorper luctus, est ante volutpat lorem, ut pharetra risus magna eu mi. Nullam vel velit porttitor, tincidunt risus vitae, lacinia massa. Mauris a nulla non libero accumsan fringilla. </p>
+
+                            <p class="time">Le 20/04/2035 05:22</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="repondre">
+                    <form method="post">
+                        <textarea></textarea>
+                        <button>envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/navigation.js"></script>
+</body>
+</html>
