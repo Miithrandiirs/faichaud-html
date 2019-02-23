@@ -1,0 +1,132 @@
+<!--
+  ~ CMS (Content Management System) pour la gestion d'élèves
+  ~     Copyright (C) 2019  HEBAN Simon
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<aside>
+    <header>
+        <div id="icon">
+            <img src="img/profile.svg" alt="anonymous"/>
+        </div>
+        <p>Bienvenue,</p>
+        <p><b>John DOE</b></p>
+    </header>
+    <div id="navigation">
+        <ul>
+            <li><a href=""><i class="fas fa-home"></i> Accueil</a></li>
+            <li class="multi"><a href=""><i class="fas fa-chevron-down"></i> Mes espaces</a>
+                <ul class="appear">
+                    <li><a href=""><i class="fas fa-laptop"></i> Informatique 1</a></li>
+                    <li><a href=""><i class="fas fa-laptop"></i> Informatique 2</a></li>
+                </ul>
+            </li>
+            <li><a href=""><i class="fas fa-graduation-cap"></i> Ma classe</a></li>
+            <li><a href=""><i class="fas fa-calendar-alt"></i> Emploi du temps</a></li>
+            <li><a href=""><i class="fas fa-folder-open"></i> Mes ressources</a></li>
+            <li><a href=""><i class="fas fa-user"></i> Mon compte</a></li>
+            <li><a href=""><i class="fas fa-sign-out-alt"></i> Déconnexion</a></li>
+        </ul>
+    </div>
+</aside>
+<main id="espaces">
+
+    <section class="box">
+        <header>
+            <div class="title">
+                <h2>Espace : Informatique 1</h2>
+            </div>
+        </header>
+
+        <div class="content">
+            <div id="espaceNavigation">
+                <header>
+                    <h3>NAVIGATION</h3>
+                </header>
+                <ul>
+                    <li><a href=""> Accueil</a></li>
+                    <li><a href=""> Tchat</a></li>
+                    <li><a href=""> Aide</a></li>
+                    <li><a href=""> Fichiers</a></li>
+                    <li><a href=""> Evaluations</a></li>
+                    <li><a href="" class="active"> Sondage</a></li>
+                </ul>
+            </div>
+            <div id="espaceSondage">
+                <header>
+                    <h3>Sondages</h3>
+                </header>
+
+                <div id="sondage">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nom</th>
+                            <th>Etat</th>
+                            <th>Date limite</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="success">
+                            <td>1</td>
+                            <td>Algèbre de Bool</td>
+                            <td>Fait</td>
+                            <td>25/03/2019 23:59</td>
+                            <td><a href="">Résultat</a></td>
+                        </tr>
+                        <tr class="warning">
+                            <td>1</td>
+                            <td>Algèbre de Bool</td>
+                            <td>En attente</td>
+                            <td>Reste 3 jours</td>
+                            <td><a href="">Commencer</a></td>
+                        </tr>
+                        <tr class="alert">
+                            <td>1</td>
+                            <td>Algèbre de Bool</td>
+                            <td>Terminé</td>
+                            <td>25/03/2019 23:59</td>
+                            <td><a href="">Résultat</a></td>
+                        </tr>
+                        <tr class="normal">
+                            <td>1</td>
+                            <td>Algèbre de Bool</td>
+                            <td>En attente</td>
+                            <td>25/03/2019 23:59</td>
+                            <td><a href="">Commencer</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/navigation.js"></script>
+</body>
+</html>

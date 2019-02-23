@@ -533,6 +533,46 @@
 #espaces .box .content #espaceEval > #evalGraph > .graph > h2 {
   text-align: center;
 }
+#espaces .box .content #espaceEval > #evalGraph > .graph > table {
+  width: 100%;
+  border-spacing: 0;
+}
+#espaces .box .content #espaceEval > #evalGraph > .graph > table > thead {
+  background: #ecf0f1;
+}
+#espaces .box .content #espaceEval > #evalGraph > .graph > table > thead > tr > th {
+  padding: 5px;
+}
+#espaces .box .content #espaceEval > #evalGraph > .graph > table > tfoot {
+  background: #ecf0f1;
+}
+#espaces .box .content #espaceEval > #evalGraph > .graph > table > tfoot > tr > th {
+  padding: 5px;
+}
+#espaces .box .content #espaceEval > #evalGraph > .graph > table > tbody > tr > td {
+  text-align: center;
+}
+#espaces .box .content #espaceEval > #evalType > header {
+  background: #e67e22;
+  width: 50%;
+  margin: 10px auto;
+}
+#espaces .box .content #espaceEval > #evalType > .reponse > form > button {
+  display: flex;
+  margin: 0 auto;
+  background: #27ae60;
+  color: white;
+  padding: 10px;
+  border: none;
+  transition: background 500ms;
+  cursor: pointer;
+}
+#espaces .box .content #espaceEval > #evalType > .reponse > form > button:hover {
+  background: #2ecc71;
+}
+#espaces .box .content #espaceEval > #evalType > .reponse > form textarea {
+  resize: vertical;
+}
 #espaces .box .content #espaceEval > #eval > a {
   display: flex;
   width: 25%;
@@ -583,6 +623,83 @@
   color: white;
 }
 #espaces .box .content #espaceEval > #eval > table > tbody > tr > td > .note {
+  font-weight: bold;
+}
+#espaces .box .content #espaceSondage {
+  width: 74%;
+  margin-left: 1%;
+}
+#espaces .box .content #espaceSondage > a {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: #2ecc71;
+  color: #FFFF;
+  margin: 5px 0;
+  height: 30px;
+}
+#espaces .box .content #espaceSondage header {
+  background: #68859b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#espaces .box .content #espaceSondage header h3 {
+  color: white;
+}
+#espaces .box .content #espaceSondage > #sondage > a {
+  display: flex;
+  width: 25%;
+  margin: 10px auto;
+  background: #8e44ad;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+}
+#espaces .box .content #espaceSondage > #sondage > table {
+  width: 100%;
+  max-width: 100%;
+  border-spacing: 0;
+}
+#espaces .box .content #espaceSondage > #sondage > table > thead {
+  background: #ecf0f1;
+  color: #34495e;
+}
+#espaces .box .content #espaceSondage > #sondage > table > thead > tr > th {
+  padding: 10px;
+}
+#espaces .box .content #espaceSondage > #sondage > table > tbody > .success {
+  background: #2ecc71;
+}
+#espaces .box .content #espaceSondage > #sondage > table > tbody > .warning {
+  background: #e67e22;
+}
+#espaces .box .content #espaceSondage > #sondage > table > tbody > .alert {
+  background: #e74c3c;
+}
+#espaces .box .content #espaceSondage > #sondage > table > tbody > .normal {
+  background: #ecf0f1;
+}
+#espaces .box .content #espaceSondage > #sondage > table > tbody > .normal > td {
+  color: #34495e;
+}
+#espaces .box .content #espaceSondage > #sondage > table > tbody > .normal > td > a {
+  color: #34495e;
+}
+#espaces .box .content #espaceSondage > #sondage > table > tbody > tr > td {
+  text-align: center;
+  padding: 5px;
+  color: #ecf0f1;
+}
+#espaces .box .content #espaceSondage > #sondage > table > tbody > tr > td > a {
+  color: white;
+}
+#espaces .box .content #espaceSondage > #sondage > table > tbody > tr > td > .note {
   font-weight: bold;
 }
 
