@@ -1,0 +1,105 @@
+<!--
+  ~ CMS (Content Management System) pour la gestion d'élèves
+  ~     Copyright (C) 2019  HEBAN Simon
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.print.css" media="print" >
+</head>
+<body>
+<aside>
+    <header>
+        <div id="icon">
+            <img src="img/profile.svg" alt="anonymous"/>
+        </div>
+        <p>Bienvenue,</p>
+        <p><b>John DOE</b></p>
+    </header>
+    <div id="navigation">
+        <ul>
+            <li><a href=""><i class="fas fa-home"></i> Accueil</a></li>
+            <li class="multi"><a href=""><i class="fas fa-chevron-down"></i> Mes espaces</a>
+                <ul class="appear">
+                    <li><a href=""><i class="fas fa-laptop"></i> Informatique 1</a></li>
+                    <li><a href=""><i class="fas fa-laptop"></i> Informatique 2</a></li>
+                </ul>
+            </li>
+            <li><a href=""><i class="fas fa-graduation-cap"></i> Ma classe</a></li>
+            <li><a href=""><i class="fas fa-calendar-alt"></i> Emploi du temps</a></li>
+            <li><a href=""><i class="fas fa-folder-open"></i> Mes ressources</a></li>
+            <li><a href=""><i class="fas fa-user"></i> Mon compte</a></li>
+            <li><a href=""><i class="fas fa-sign-out-alt"></i> Déconnexion</a></li>
+        </ul>
+    </div>
+</aside>
+<main id="maclasse">
+
+    <section class="box">
+        <header>
+            <div class="title">
+                <h2>Ma classe</h2>
+            </div>
+        </header>
+
+        <div class="content">
+            <div id="calendrier">
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/moment.js"></script>
+<script src="js/navigation.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.js"></script>
+<script>
+    $(function() {
+
+        var todayDate = moment().startOf('day');
+        var YM = todayDate.format('YYYY-MM');
+        var YESTERDAY = todayDate.clone().subtract(1, 'day').format('YYYY-MM-DD');
+        var TODAY = todayDate.format('YYYY-MM-DD');
+        var TOMORROW = todayDate.clone().add(1, 'day').format('YYYY-MM-DD');
+
+        $('#calendrier').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay,listWeek'
+            },
+            editable: false,
+            eventLimit: true, // allow "more" link when too many events
+            navLinks: true,
+            events: [
+                {
+                    title: 'Date limite Interrogation',
+                    start: '2019-02-01',
+                    end: '2019-02-01'
+                },
+            ]
+        });
+    });
+</script>
+</body>
+</html>
